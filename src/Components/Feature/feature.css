@@ -1,0 +1,86 @@
+.featured {
+    height: 90vh;
+    /* position: relative; */
+  }
+  .featured .category {
+    position: absolute;
+    top: 80px;
+    left: 50px;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .featured .category select {
+    cursor: pointer;
+    background-color: var(--main-color);
+    border: 1px solid white;
+    color: white;
+    margin-left: 20px;
+    padding: 5px;
+  }
+  .featured img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: fill;
+       object-fit: fill;
+  }
+  .featured .info {
+    width: 30%;
+    position: absolute;
+    left: 100px;
+    bottom: 250px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  .featured .info .title {
+    font-size: 4rem;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    font-weight: 700;
+    padding-bottom: 0.3rem;
+  }
+  .featured .info .desc {
+    font-size: 1.2vw;
+    font-weight: 400;
+    line-height: normal;
+    text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+    width: 100%;
+    margin: 20px 0px;
+    font-family: Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+  }
+  .featured .info .buttons {
+    display: flex;
+  }
+  .featured .info .buttons button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  .featured .info .buttons button.play {
+    background-color: white;
+    color: var(--main-color);
+  }
+  .featured .info .buttons button.more {
+    background-color: gray;
+    color: white;
+  }
+  .featured .info .buttons button span {
+    margin-left: 5px;
+  }
+
+  .fade_bottom{
+    height: 7.4rem;
+    width: 100%;
+    background-image: linear-gradient(180deg,transparent,rgba(37,37,37,0.61),#0b0b0b);
+    position:absolute;
+    bottom: 95px;
+  }

@@ -1,0 +1,108 @@
+
+  .listItem {
+    width: 285px;
+    height: 165px;
+    background-color: var(--main-color);
+    margin-right: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+  }
+
+  .listItem-large {
+    width: 565px;
+    height: 318px;
+    background-color: var(--main-color);
+    margin-right: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    color: white;
+  }
+
+  .listItem img{
+    width: 100%;
+    height: 100%;
+    -o-object-fit:fill;
+       object-fit: fill;
+    
+  }
+
+  .listItem-large img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit:cover;
+       object-fit: cover;
+  }
+
+  .listItem video, .listItem-large .videoPop {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  .listItem:hover{
+    /* width: 325px;
+    height: 300px; */
+    /* position: absolute; */
+    transform: scale(2) !important;
+    transition: all .5s ease;
+    top: -150px;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+  }
+
+  .listItem-large:hover {
+    transform: scale(1.3) !important;
+    transition: all .5s ease;
+    top: -150px;
+    box-shadow: 0px 0px 15px 0px rgba(255, 255, 255, 0.07);
+    border-radius: 5px;
+  }
+
+  .listItem:hover img, .listItem-large:hover img {
+    display: none;
+  }
+  .listItem:hover .itemInfo, .listItem-large:hover .itemInfo {
+    display: flex;
+    flex-direction: column;
+    height: 65px;  
+    position: absolute;
+    bottom: 0;
+    padding: 5px;
+  }
+  .listItem:hover .itemInfo .icons, .listItem-large:hover .itemInfo .icons {
+    display: flex;
+    /* margin-bottom: 10px; */
+  }
+  .listItem:hover .itemInfo .icons .icon, .listItem-large:hover .itemInfo .icons .icon {
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  .listItem:hover .itemInfo .itemInfoTop {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+  }
+  .listItem:hover .itemInfo .itemInfoTop .limit {
+    border: 1px solid gray;
+    padding: 1px 3px;
+    margin: 0 10px;
+  }
+  .listItem:hover .itemInfo .desc {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  .listItem:hover .itemInfo .genre {
+    font-size: 14px;
+    color: lightgray;
+  }
